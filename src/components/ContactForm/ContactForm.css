@@ -1,3 +1,11 @@
+.contact-title{
+    margin-left: 20%;
+}
+
+.hr{
+    width: 220px;
+    margin-top: 4px;
+}
 .contact-form{
     background-color: #34495E;
 }
@@ -11,11 +19,11 @@
 }
 
 .form{
-   padding: 20px 0px 40px 0px;
+   padding: 5% 20% 10%;
 }
 
 input {
-    width: 40%;
+    width: 60%;
     height: 35px;
 }
 
@@ -24,9 +32,9 @@ input:focus {
 }
 
 textarea {
-    max-width: 40%;
-    min-width: 40%;
-    width: 40%;
+    max-width: 60%;
+    min-width: 60%;
+    width: 60%;
     max-height: 100px;
     min-height: 100px;
 }

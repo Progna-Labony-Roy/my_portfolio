@@ -3,27 +3,13 @@
     background: url(background-img.jpg) no-repeat;
     background-size: cover;
     background-position: center;
-    height: 600px;
-}
-
-.heading{
-    color: white;
+    height: 650px;
 }
 
 
 .main-info{
     padding-top: 150px;
+    margin-left: 10%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.main-info h1{
-    color: orange;
-}
-
-.typed-text{
-    color: white;
 }

@@ -7,9 +7,10 @@ const Header = () => {
     <div>
       <div className="header-wrapper">
         <div className="main-info">
-          <h1 className="heading">Progna Labony Roy</h1>
+          <h2 className="text-4xl text-white mb-3 font-semibold">Front-end Developer</h2>
+          <h1 className="text-5xl text-orange-500 font-semibold">Progna Labony Roy</h1>
           <Typed
-            className="typed-text"
+            className="text-white my-3 text-lg"
             strings={["Here you can find anything"]}
             typeSpeed={50}
             backSpeed={60}
@@ -20,7 +21,7 @@ const Header = () => {
             href="Progna_Labony_Roy_Resume.pdf"
             download="Progna_Labony_Roy_Resume.pdf"
           >
-            <button className="resume-button btn btn-light">Resume</button>
+            <button className="resume-button btn btn-outline text-white text-lg">Resume</button>
           </a>
         </div>
       </div>

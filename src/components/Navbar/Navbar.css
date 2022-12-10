@@ -5,7 +5,7 @@
   
   /* nav-link */
   nav a .nav-link{
-    font-size: 10px;
+  font-size: 10px;
   font-weight: 500;
   }
   
@@ -13,11 +13,10 @@
     text-transform: uppercase;
   }
   
-  .navbar-nav li a{
-    font-size: smaller;
+  .nav-item{
     margin-right: 0;
     color: white;
   }
-  .navbar-nav li a:hover{
+  .nav-item:hover{
     color: orange;
   }

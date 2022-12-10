@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "./ContactForm.css";
 import { toast } from "react-hot-toast";
-
+import underline from "../Image/underline.png"
 const ContactForm = () => {
   const form = useRef();
 
@@ -31,7 +31,8 @@ const ContactForm = () => {
 
   return (
     <div className="contact-form ">
-      <div className="container mx-auto">
+      <h1 className="pt-20 text-3xl text-white contact-title">Contact with me</h1>
+      <div className="hr contact-title"><hr /></div>
         <form className="form" ref={form} onSubmit={sendEmail}>
           <input
             name="user_name"
@@ -55,7 +56,6 @@ const ContactForm = () => {
           <input type="submit" value="Send" />
         </form>
       </div>
-    </div>
   );
 };
 

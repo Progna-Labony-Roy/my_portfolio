@@ -1,58 +1,37 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import portfolio from "../Image/portfolio.png";
 import "./Navbar.css";
 
 const Navbar = () => {
+
+  const navItems = (
+   <>
+    <li  className="nav-item"><Link to=''>Home</Link></li>
+    <li  className="nav-item"><Link to=''>Projects</Link></li>
+    <li  className="nav-item"><Link to=''>Contact</Link></li>
+    </>
+  );
+
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-dark">
-      <div className="container">
-        <a className="navbar-brand" href="#">
-          <img className="logo" src={portfolio} alt="logo"></img>
-        </a>
-        <nav className="navbar navbar-dark bg-dark">
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-        </nav>
-        <div className="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul className="navbar-nav ml-auto">
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Home
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                About me
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Serviecs
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Projects
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
+    <div className="navbar bg-neutral text-neutral-content justify-between">
+    <div className="navbar-start">
+      <div className="dropdown">
+        <label tabIndex={0} className="btn btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+        </label>
+        <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+         {navItems}
+        </ul>
       </div>
-    </nav>
+      <img className="logo" src={portfolio} alt="logo"></img>
+    </div>
+    <div className="navbar-center hidden lg:flex">
+      <ul className="menu menu-horizontal p-0">
+       {navItems}
+      </ul>
+    </div>
+  </div>
   );
 };
 
