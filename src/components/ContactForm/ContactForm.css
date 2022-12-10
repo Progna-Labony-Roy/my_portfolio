@@ -1,0 +1,54 @@
+.contact-form{
+    background-color: #34495E;
+}
+
+.form{
+   padding: 20px 0px 40px 0px;
+}
+
+label {
+    margin-top: 1rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: white;
+}
+
+input {
+    width: 40%;
+    height: 35px;
+    padding: 7px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(220, 220, 220);
+
+}
+
+input:focus {
+    border: 2px solid rgba(0, 206, 158, 1);
+}
+
+textarea {
+    max-width: 40%;
+    min-width: 40%;
+    width: 40%;
+    max-height: 100px;
+    min-height: 100px;
+    padding: 7px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(220, 220, 220);
+
+}
+
+textarea:focus {
+    border: 2px solid rgba(0, 206, 158, 1);
+}
+
+
+input[type="submit"] {
+    margin-top: 2rem;
+    cursor: pointer;
+    background: rgb(249, 105, 14);
+    color: white;
+    border: none;
+  }
