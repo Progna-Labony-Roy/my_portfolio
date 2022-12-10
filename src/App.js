@@ -1,17 +1,13 @@
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from './components/Navbar/Navbar';
-import Header from './components/Header/Header';
-import ContactForm from './components/ContactForm/ContactForm';
 import { Toaster } from 'react-hot-toast';
+import { RouterProvider } from 'react-router-dom';
+import router from './components/Router/Router';
 
 function App() {
   return (
     <div className="App">
-    <Navbar></Navbar>
-    <Header></Header>
-    <ContactForm></ContactForm>
-    <Toaster />
+    <RouterProvider router={router}></RouterProvider>
+    <Toaster></Toaster>
     </div>
   );
 }
