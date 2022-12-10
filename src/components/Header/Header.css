@@ -1,0 +1,29 @@
+.header-wrapper{
+    position: relative;
+    background: url(background-img.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+
+.heading{
+    color: white;
+}
+
+
+.main-info{
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main-info h1{
+    color: orange;
+}
+
+.typed-text{
+    color: white;
+}
