@@ -4,18 +4,18 @@ import ProjectCard from './ProjectCard'
 import { useLoaderData } from "react-router-dom";
 
 const Projects = () => {
-  const projects=useLoaderData("")
-  console.log(projects)
-  // const [projects,setProjects]=useState([]);
+  // const projects=useLoaderData("")
+  // console.log(projects)
+  const [projects,setProjects]=useState([]);
 
-  // useEffect(()=>{
-  //   fetch("project.json")
-  //   .then(res=> res.json())
-  //   .then(data=> {
-  //     // console.log(data);
-  //     setProjects(data)
-  //   })
-  // },[])
+  useEffect(()=>{
+    fetch("project.json")
+    .then(res=> res.json())
+    .then(data=> {
+      // console.log(data);
+      setProjects(data)
+    })
+  },[])
   
 
   return (

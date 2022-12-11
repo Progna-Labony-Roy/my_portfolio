@@ -28,13 +28,13 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Projects></Projects>,
-        loader: () => fetch("http://localhost:5000/projects/"),
+        loader: () => fetch("product.json"),
       },
       {
         path: "/projects/:id",
         element: <DetailsCard></DetailsCard>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/projects/${params.id}`),
+          fetch(`https://portfolio-server-nu.vercel.app/${params.id}`),
       },
       {
         path: "/",
