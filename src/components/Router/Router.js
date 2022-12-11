@@ -4,7 +4,7 @@ import Header from "../Header/Header";
 import Layout from "../Layout/Layout";
 import Navbar from "../Navbar/Navbar";
 import Projects from "../Projects/Projects";
-import Servieces from "../Servieces/Servieces";
+
 
 const { createBrowserRouter } = require("react-router-dom");
 
@@ -21,20 +21,16 @@ const router= createBrowserRouter([
             path:'/',
             element:<Header></Header>
         },
-        {
-            path:'/',
+   {
+    path:'/',
             element:<AboutMe></AboutMe>
-        },
+   },
         {
             path:'/',
-            element:<Servieces></Servieces>
-        },
-        {
-            path:'/projects',
             element:<Projects></Projects>
         },
         {
-            path:'/contact',
+            path:'/',
             element:<ContactForm></ContactForm>
         },
     ]

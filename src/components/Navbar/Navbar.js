@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import portfolio from "../Image/portfolio.png";
 import "./Navbar.css";
 
@@ -7,14 +6,15 @@ const Navbar = () => {
 
   const navItems = (
    <>
-    <li  className="nav-item"><Link to='/'>Home</Link></li>
-    <li  className="nav-item"><Link to='/projects'>Projects</Link></li>
-    <li  className="nav-item"><Link to='/contact'>Contact</Link></li>
+    <li  className="nav-item"><a href="" >Home</a></li>
+    <li  className="nav-item"><a href="#about-id" >About me</a></li>
+    <li  className="nav-item"><a href="#project-id" >Projects</a></li>
+    <li  className="nav-item"><a href="#contact-id">Contact</a></li>
     </>
   );
 
   return (
-    <div className="navbar bg-neutral text-neutral-content justify-between">
+    <div className="sticky navbar bg-neutral text-neutral-content justify-between">
     <div className="navbar-start">
       <div className="dropdown">
         <label tabIndex={0} className="btn btn-ghost lg:hidden">

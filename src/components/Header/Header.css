@@ -9,7 +9,14 @@
 
 .main-info{
     padding-top: 150px;
+    margin-top: 63px;
     margin-left: 10%;
     display: flex;
     flex-direction: column;
+}
+
+
+.social-icon{
+    height: 22px;
+    color: white;
 }

@@ -1,0 +1,12 @@
+.main{
+    max-width: 70%;
+}
+
+.vertical{
+    border-right: 1px solid black;
+}
+
+.my-image{
+    height: 400px;
+    justify-content: center;
+}

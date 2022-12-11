@@ -30,8 +30,8 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="contact-form ">
-      <h1 className="pt-20 text-3xl text-white contact-title">Contact with me</h1>
+    <div className="contact-form" id="contact-id">
+      <h1 className="pt-32 text-3xl text-white contact-title">Contact with me</h1>
       <div className="hr contact-title"><hr /></div>
         <form className="form" ref={form} onSubmit={sendEmail}>
           <input
