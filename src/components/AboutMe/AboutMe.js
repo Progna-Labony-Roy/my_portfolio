@@ -10,10 +10,10 @@ const AboutMe = () => {
       <h5 className="text-center">Get To Know</h5>
       <h1 className="text-center">About Me</h1>
       <div className="container about-container">
-        <div className="about_me">
+        <div className="about-me">
           <img className="my-image" src={myImg} alt="my-image" />
         </div>
-        <div className="about_content">
+        <div className="about-content">
           <div className="about-cards">
             <article className="about-card">
               <FaAward className="about-card-icon"></FaAward>
@@ -29,8 +29,8 @@ const AboutMe = () => {
 
       
 
-          <div className="mt-10">
-            <p>
+          
+            <p className="my-info">
               I'm quite interested in web development. For almost 1.5 years,
               I've been learning front-end development, and for 7 months, I've
               been learning back-end development. I'm always looking for new
@@ -43,7 +43,7 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
-    </div>
+   
   );
 };
 

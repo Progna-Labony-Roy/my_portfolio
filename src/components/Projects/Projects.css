@@ -1,3 +1,7 @@
 .project-cards{
 padding: 5% 10%;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap: 15px;
+
 }

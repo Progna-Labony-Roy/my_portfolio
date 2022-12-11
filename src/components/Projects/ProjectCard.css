@@ -1,0 +1,19 @@
+.project-card{
+    padding: auto;
+    background: #2c2c6c;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    padding: 2rem;
+    gap: 1.5rem;
+    color:  var(--color-primary);
+}
+
+.project-card:hover{
+        background:transparent ;
+        border-color: var(--color-primary-varient);
+    }
+
+.details-btn{
+    background: #2c2c6c;
+    margin-bottom: 0px;
+}

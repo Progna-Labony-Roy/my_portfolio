@@ -29,3 +29,59 @@
     background:transparent ;
     border-color: var(--color-primary-varient);
 }
+
+.about-card small{
+    font-size: 0.7rem;
+    color:var(--color-light);
+}
+
+.about-card-icon{
+    color:var(--color-primary);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.my-info{
+    margin: 2rem 0 1rem;
+    color:var(--color-light);
+    font-weight: 300;
+}
+
+
+/* MEDIA QUERY */
+@media screen and (max-width:1024px){
+    .about-container{
+        grid-template-columns: 1fr;
+    }
+
+    .about-me{
+        width:50%;
+        margin: 2rem auto 0 ;
+    }
+
+    .my-info{
+        margin: 1rem 0 1.5rem;
+    }
+}
+@media screen and (max-width:600px){
+    .about-me{
+        width:65%;
+        margin: 0 auto ;
+    }
+
+    .about-cards{
+        grid-template-columns: 1fr;
+    }
+    .about-content{
+        text-align: center;
+        margin-top: -100px;
+    }
+
+    .my-info{
+        margin: 1.5rem 0;
+    }
+
+    .btn{
+        margin-bottom: 200px;
+    }
+}
