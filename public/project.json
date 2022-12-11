@@ -1,6 +1,6 @@
 [
     {
-      "project_id": 1,
+      "_id": "6395e45808afa0c69d8a3b06",
       "name": "Quiz",
       "title": "Online learning and quiz practice platform",
       "image": "https://i.ibb.co/bPPJZ6N/project1.png",
@@ -31,7 +31,7 @@
       ]
     },
     {
-      "project_id": 2,
+      "_id": "6395e45808afa0c69d8a3b07",
       "name": "DentalCare",
       "title": "Service review website",
       "image": "https://i.ibb.co/gr1cfDq/project2.png",
@@ -62,7 +62,7 @@
       ]
     },
     {
-      "project_id": 3,
+      "_id": "6395e45808afa0c69d8a3b08",
       "name": " BookStore",
       "title": "Second hand book selling websitessss",
       "image": "https://i.ibb.co/S3rXrVm/project3.png" ,

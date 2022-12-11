@@ -3,39 +3,45 @@ import ContactForm from "../ContactForm/ContactForm";
 import Header from "../Header/Header";
 import Layout from "../Layout/Layout";
 import Navbar from "../Navbar/Navbar";
+import DetailsCard from "../Projects/DetailsCard";
 import Projects from "../Projects/Projects";
-
 
 const { createBrowserRouter } = require("react-router-dom");
 
-const router= createBrowserRouter([
-   {
-    path:'/',
-    element:<Layout></Layout>,
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout></Layout>,
     children: [
-        {
-            path:'/',
-            element:<Navbar></Navbar>
-        },
-        {
-            path:'/',
-            element:<Header></Header>
-        },
-   {
-    path:'/',
-            element:<AboutMe></AboutMe>
-   },
-        {
-            path:'/',
-            element:<Projects></Projects>,
-            loader:() => fetch("project.json"),
-        },
-        {
-            path:'/',
-            element:<ContactForm></ContactForm>
-        },
-    ]
-   }
-  ]);
+      {
+        path: "/",
+        element: <Navbar></Navbar>,
+      },
+      {
+        path: "/",
+        element: <Header></Header>,
+      },
+      {
+        path: "/",
+        element: <AboutMe></AboutMe>,
+      },
+      {
+        path: "/",
+        element: <Projects></Projects>,
+        loader: () => fetch("http://localhost:5000/projects/"),
+      },
+      {
+        path: "/projects/:id",
+        element: <DetailsCard></DetailsCard>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/projects/${params.id}`),
+      },
+      {
+        path: "/",
+        element: <ContactForm></ContactForm>,
+      },
+    ],
+  },
+]);
 
-  export default router;
+export default router;

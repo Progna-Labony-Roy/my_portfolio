@@ -3,10 +3,11 @@
     grid-template-columns: 35% 50%;
     gap:15%;
     margin-top: 40px;
+    margin-bottom: 100px;
 }
 
 .my-image{
-    height: 400px;
+    height: 380px;
 }
 
 .about-cards{
@@ -19,10 +20,10 @@
     background: #2c2c6c;
     border: 1px solid transparent;
     border-radius: 1rem;
-    padding: 2rem;
     gap: 1.5rem;
     text-align: center;
     transition: var(--transition);
+    padding-bottom: 10px ;
 }
 
 .about-card:hover{
@@ -38,7 +39,7 @@
 .about-card-icon{
     color:var(--color-primary);
     font-size: 1.4rem;
-    margin-bottom: 1rem;
+    margin: 7% 45% 5%;
 }
 
 .my-info{
@@ -51,7 +52,7 @@
 /* MEDIA QUERY */
 @media screen and (max-width:1024px){
     .about-container{
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr
     }
 
     .about-me{
@@ -61,6 +62,10 @@
 
     .my-info{
         margin: 1rem 0 1.5rem;
+    }
+
+    .btn{
+        margin-bottom: 200px;
     }
 }
 @media screen and (max-width:600px){

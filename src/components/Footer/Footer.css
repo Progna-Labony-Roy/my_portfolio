@@ -1,3 +1,40 @@
 .footer{
-    height: 250px;
+    height: 150px;
+    padding: 0px 0px 0 15%;
+}
+
+.copywrite{
+    padding-bottom: 120px;
+    padding-top: 20px;
+    color: var(--color-primary);
+}
+
+.footerTitle{
+    color: var(--color-primary);
+    font-size: small;
+    font-weight: normal;
+}
+
+.name{
+    color: var(--color-primary); 
+}
+
+
+@media screen and (max-width:1024px){
+    .footer{
+        height: 370px;
+        padding: 0 0px 0 25%;
+    }
+    
+    .copywrite{
+        padding: 30px;
+    }
+}
+@media screen and (max-width:600px){
+    .footer{
+        
+        padding: 0px 0px 0 25%;
+        
+    }
+    
 }

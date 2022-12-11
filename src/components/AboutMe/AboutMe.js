@@ -16,7 +16,7 @@ const AboutMe = () => {
         <div className="about-content">
           <div className="about-cards">
             <article className="about-card">
-              <FaAward className="about-card-icon"></FaAward>
+              <FaAward className="about-card-icon "></FaAward>
               <h5>Experience</h5>
               <small>1+ years of LEARNING</small>
             </article>
@@ -30,14 +30,14 @@ const AboutMe = () => {
       
 
           
-            <p className="my-info">
+            <p className="my-info text-sm">
               I'm quite interested in web development. For almost 1.5 years,
               I've been learning front-end development, and for 7 months, I've
               been learning back-end development. I'm always looking for new
               experiences. I recently completed a complete web development
               course from 𝗣𝗿𝗼𝗴𝗿𝗮𝗺𝗺𝗶𝗻𝗴 𝗛𝗲𝗿𝗼.
             </p>
-            <a href="#contact-id" className="btn btn-primary mt-10 mb-12">
+            <a href="#contact-id" className="btn btn-sm contact-btn mt-5">
               Let's Talk
             </a>
           </div>

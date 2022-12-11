@@ -5,6 +5,7 @@ import { AiOutlineHome } from "react-icons/ai";
 import { AiOutlineUser } from "react-icons/ai";
 import { AiOutlineProject } from "react-icons/ai";
 import { AiOutlineContacts } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [activeNow,setActiveNow]=useState('#')

@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import project1 from "../Image/project1.png";
 import project2 from "../Image/project2.png";
 import project3 from "../Image/project3.png";
 import './ProjectCard.css'
 
-const ProjectCard = (props) => {
-  const {image,name,title}=props.project;
+const ProjectCard = ({project}) => {
+  const {_id,image,name,title}=project;
 
     return (
         <div className='project-card'>
@@ -17,7 +18,7 @@ const ProjectCard = (props) => {
            </div>
            <div>
            </div>
-           <button className='btn btn-sm details-btn mt-5'>Details</button>
+           <Link to={`/projects/${_id}`}><button className='btn btn-sm details-btn mt-5'>Details</button></Link>
       </div>
       
     );
