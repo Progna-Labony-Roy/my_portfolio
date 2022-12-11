@@ -1,12 +1,31 @@
-.main{
-    max-width: 70%;
-}
-
-.vertical{
-    border-right: 1px solid black;
+.about-container{
+    display: grid;
+    grid-template-columns: 35% 50%;
+    gap:15%;
+    margin-top: 40px;
 }
 
 .my-image{
     height: 400px;
-    justify-content: center;
+}
+
+.about-cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:1.5rem
+}
+
+.about-card{
+    background: #2c2c6c;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 2rem;
+    gap: 1.5rem;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.about-card:hover{
+    background:transparent ;
+    border-color: var(--color-primary-varient);
 }

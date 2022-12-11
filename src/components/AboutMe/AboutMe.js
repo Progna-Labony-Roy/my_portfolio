@@ -1,26 +1,50 @@
-import React from 'react';
-import './AboutMe.css';
-import myImg from '../Image/myImg.png'
+import React from "react";
+import "./AboutMe.css";
+import myImg from "../Image/myImg.png";
+import { FaAward } from "react-icons/fa";
+import { VscFolderLibrary } from "react-icons/vsc";
 
 const AboutMe = () => {
-    return (
-      <div className='pt-20' id='about-id'>
-        <p className='text-4xl text-center my-10'>About Me</p>
-          <div className='grid grid-cols-1 lg:grid-cols-2 main mx-auto'>
-            <div>
-                <img className='my-image' src={myImg} alt="" />
-            </div>
-            
-            <div>
-            <span className='vertical'></span>
-                <p>I'm quite interested in web development. For almost 1.5 years, I've been learning front-end development, and for 7 months, I've been learning back-end development. I'm always looking for new experiences. I recently completed a complete web development course from 𝗣𝗿𝗼𝗴𝗿𝗮𝗺𝗺𝗶𝗻𝗴 𝗛𝗲𝗿𝗼.
+  return (
+    <div className="pt-10" id="about-id">
+      <h5 className="text-center">Get To Know</h5>
+      <h1 className="text-center">About Me</h1>
+      <div className="container about-container">
+        <div className="about_me">
+          <img className="my-image" src={myImg} alt="my-image" />
+        </div>
+        <div className="about_content">
+          <div className="about-cards">
+            <article className="about-card">
+              <FaAward className="about-card-icon"></FaAward>
+              <h5>Experience</h5>
+              <small>1+ years of LEARNING</small>
+            </article>
+            <article className="about-card">
+            <VscFolderLibrary className="about-card-icon"></VscFolderLibrary>
+            <h5>Projects</h5>
+            <small>Explore my projects here</small>
+          </article>
+          </div>
 
-<p>I've completed a number of projects utilizing diverse web technologies, frameworks, and libraries, including 𝗥𝗲𝗮𝗰𝘁𝗝𝗦, 𝗡𝗼𝗱𝗲𝗝𝗦, 𝗘𝘅𝗽𝗿𝗲𝘀𝘀𝗝𝗦, 𝗝𝗮𝘃𝗮𝗦𝗰𝗿𝗶𝗽𝘁, 𝗕𝗼𝗼𝘁𝘀𝘁𝗿𝗮𝗽, 𝗧𝗮𝗶𝗹𝘄𝗶𝗻𝗱 𝗖𝗦𝗦, 𝗱𝗮𝗶𝘀𝘆𝗨𝗜, 𝗳𝗶𝗿𝗲𝗯𝗮𝘀𝗲, 𝗻𝗲𝘁𝗹𝗶𝗳𝘆, 𝗮𝗻𝗱 𝘃𝗲𝗿𝗰𝗲𝗹.I am a 𝐪𝐮𝐢𝐜𝐤 𝐥𝐞𝐚𝐫𝐧𝐞𝐫 and a self-motivated individual. In addition, I have problem-solving, decision-making, and communication skills.</p>
-</p>
-            </div>
+      
+
+          <div className="mt-10">
+            <p>
+              I'm quite interested in web development. For almost 1.5 years,
+              I've been learning front-end development, and for 7 months, I've
+              been learning back-end development. I'm always looking for new
+              experiences. I recently completed a complete web development
+              course from 𝗣𝗿𝗼𝗴𝗿𝗮𝗺𝗺𝗶𝗻𝗴 𝗛𝗲𝗿𝗼.
+            </p>
+            <a href="#contact-id" className="btn btn-primary mt-10 mb-12">
+              Let's Talk
+            </a>
+          </div>
         </div>
       </div>
-    );
+    </div>
+  );
 };
 
 export default AboutMe;

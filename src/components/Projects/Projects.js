@@ -7,7 +7,7 @@ import project3 from "../Image/project3.png";
 const Projects = () => {
   return (
     <div className="project-cards" id="project-id">
-      <h1 className="text-5xl mb-16 mx-auto">
+      <h1 className="mb-16 mx-auto">
         <span>1.5</span> years in web development
       </h1>
       <div className="grid gap-20 grid-col-1 lg:grid-cols-3 mx-auto">
